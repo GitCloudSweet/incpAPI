@@ -54,7 +54,7 @@ php artisan list
 
 
 ## 项目 Nginx代理详解 
-#### 所有版本版本后台页面代理
+#### 所有版本后台页面代理
 ```bash
 server {
     listen 80;
@@ -86,7 +86,7 @@ server {
 }
 ```
 
-#### 所有版本前端编译文件目录
+#### 所有版本前端编译文件目录-（uni-app 编译文件）
 ```bash
 server {
     listen 80;
@@ -118,7 +118,7 @@ server {
 }
 ```
 
-#### 代理各个版本的api,ws
+#### 代理H5各个版本的api,ws
 ```bash
 server {
     listen 80;
