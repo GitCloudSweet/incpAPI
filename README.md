@@ -35,11 +35,12 @@ php artisan list
 
 #### 项目启动--windwos
 1. 确保 Nginx 配置正确，将后台页面目录指向 `public/admin`。
-2. 使用 `npm run dev` 启动 Vite 开发服务器。
+2. 确保 Nginx 配置正确，api 指向 `public/api`。
+<!-- 2. 使用 `npm run dev` 启动 Vite 开发服务器。
 3. 使用 `php artisan serve` 启动 API 服务。
-4. 使用 `php artisan websockets:serve` 启动 WebSocket 服务。
-5. 每次修改代码后，执行 `php artisan queue:restart` 重启队列。
-6. 启动脚本任务：`php artisan schedule:run`。
+4. 使用 `php artisan websockets:serve` 启动 WebSocket 服务。 -->
+3. 每次修改代码后，执行 `php artisan queue:restart` 重启队列。
+4. 启动脚本任务：`php artisan schedule:run`。
 
 #### 项目启动--liunx（开启PHP-FPM指令）
 1. 确保 Nginx 配置正确，将后台页面目录指向 `public/admin`。
@@ -52,6 +53,7 @@ php artisan list
 #### 其他
 - Laravel 文档: [https://laravel.com/docs/10.x](https://laravel.com/docs/10.x)
 
+**提示：Ws搭建后端需修改.env文件,前端需修改src/utils/websocket.js文件**
 
 ## 项目 Nginx代理详解 
 #### 所有版本后台页面代理
